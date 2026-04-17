@@ -1,0 +1,138 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e7a5919ff3dd728499db3d01b9c7d9c4, type: 3}
+  m_Name: Level1InteractionSequence
+  m_EditorClassIdentifier: 
+  lines:
+  - text: Let's open up this train and see what we've got. (Click on a train compartment)
+    speakerName: Sheriff
+    portrait: {fileID: -7307842283543146795, guid: 8e858e9d9926f124392468c068f061d7, type: 3}
+    useCustomRevealSpeed: 0
+    revealLettersPerSecond: 0
+    interactionRequirement:
+      enabled: 1
+      allowedInteractionIds:
+      - train_compartment
+      requiredInteractionCount: 1
+  - text: You can see that we're receiving a POST request to /api/login. The corresponding
+      information should include a username and password.
+    speakerName: Sheriff
+    portrait: {fileID: -7307842283543146795, guid: 8e858e9d9926f124392468c068f061d7, type: 3}
+    useCustomRevealSpeed: 0
+    revealLettersPerSecond: 0
+    interactionRequirement:
+      enabled: 0
+      allowedInteractionIds: []
+      requiredInteractionCount: 1
+  - text: In this train, the username is "jsmith" and the password is "Tr0ub4dor&3".
+    speakerName: Sheriff
+    portrait: {fileID: -7307842283543146795, guid: 8e858e9d9926f124392468c068f061d7, type: 3}
+    useCustomRevealSpeed: 0
+    revealLettersPerSecond: 0
+    interactionRequirement:
+      enabled: 0
+      allowedInteractionIds: []
+      requiredInteractionCount: 1
+  - text: Nothing seems out of the ordinary, we're done here. (Close the window with
+      the "x" at the top right)
+    speakerName: Sheriff
+    portrait: {fileID: -7307842283543146795, guid: 8e858e9d9926f124392468c068f061d7, type: 3}
+    useCustomRevealSpeed: 0
+    revealLettersPerSecond: 0
+    interactionRequirement:
+      enabled: 1
+      allowedInteractionIds:
+      - close_train_compartment_popup
+      requiredInteractionCount: 1
+  - text: This kind of information doesn't seem out of the ordinary. Therefore, we
+      will accept the train. (Click "Accept" at the top)
+    speakerName: Sheriff
+    portrait: {fileID: -7307842283543146795, guid: 8e858e9d9926f124392468c068f061d7, type: 3}
+    useCustomRevealSpeed: 0
+    revealLettersPerSecond: 0
+    interactionRequirement:
+      enabled: 1
+      allowedInteractionIds:
+      - accept_train
+      requiredInteractionCount: 1
+  - text: Not all trains are safe to pass through this town. Some fools try to bypass
+      our security with malicious information.
+    speakerName: Sheriff
+    portrait: {fileID: -7307842283543146795, guid: 8e858e9d9926f124392468c068f061d7, type: 3}
+    useCustomRevealSpeed: 0
+    revealLettersPerSecond: 0
+    interactionRequirement:
+      enabled: 0
+      allowedInteractionIds: []
+      requiredInteractionCount: 1
+  - text: I'm counting on you to stop them and reject their request before it harms
+      the company. If you let too many go bye, you're fired.
+    speakerName: Sheriff
+    portrait: {fileID: -7307842283543146795, guid: 8e858e9d9926f124392468c068f061d7, type: 3}
+    useCustomRevealSpeed: 0
+    revealLettersPerSecond: 0
+    interactionRequirement:
+      enabled: 0
+      allowedInteractionIds: []
+      requiredInteractionCount: 1
+  - text: If you're unsure of what kind of information is safe to let through, check
+      your manual. (Click "Manual" in the top left)
+    speakerName: Sheriff
+    portrait: {fileID: -7307842283543146795, guid: 8e858e9d9926f124392468c068f061d7, type: 3}
+    useCustomRevealSpeed: 0
+    revealLettersPerSecond: 0
+    interactionRequirement:
+      enabled: 1
+      allowedInteractionIds:
+      - open_manual
+      requiredInteractionCount: 1
+  - text: In here, you can review what kind of information we expect to receive on
+      these trains.
+    speakerName: Sheriff
+    portrait: {fileID: -7307842283543146795, guid: 8e858e9d9926f124392468c068f061d7, type: 3}
+    useCustomRevealSpeed: 0
+    revealLettersPerSecond: 0
+    interactionRequirement:
+      enabled: 0
+      allowedInteractionIds: []
+      requiredInteractionCount: 1
+  - text: As you get better, we'll allow more complex trains to come your way, and
+      in turn more of your manual will be available.
+    speakerName: Sheriff
+    portrait: {fileID: -7307842283543146795, guid: 8e858e9d9926f124392468c068f061d7, type: 3}
+    useCustomRevealSpeed: 0
+    revealLettersPerSecond: 0
+    interactionRequirement:
+      enabled: 0
+      allowedInteractionIds: []
+      requiredInteractionCount: 1
+  - text: That's enough with the manual for now. (Click the "Close" button to close
+      the manual)
+    speakerName: Sheriff
+    portrait: {fileID: -7307842283543146795, guid: 8e858e9d9926f124392468c068f061d7, type: 3}
+    useCustomRevealSpeed: 0
+    revealLettersPerSecond: 0
+    interactionRequirement:
+      enabled: 1
+      allowedInteractionIds:
+      - close_manual
+      requiredInteractionCount: 1
+  - text: Alright, you're on your own now, partner. Let's see how you fare! Oh, and...
+      try not to get fired on the first day, will ya?
+    speakerName: Sheriff
+    portrait: {fileID: -7307842283543146795, guid: 8e858e9d9926f124392468c068f061d7, type: 3}
+    useCustomRevealSpeed: 0
+    revealLettersPerSecond: 0
+    interactionRequirement:
+      enabled: 0
+      allowedInteractionIds: []
+      requiredInteractionCount: 1

@@ -1,0 +1,72 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e7a5919ff3dd728499db3d01b9c7d9c4, type: 3}
+  m_Name: Level1IntroBeforeTrainSequence
+  m_EditorClassIdentifier: 
+  lines:
+  - text: So you're the new hire in town huh? Welcome to RouterCo, where we route
+      information between towns and make sure it's safe for our company.
+    speakerName: Sheriff
+    portrait: {fileID: -7307842283543146795, guid: 8e858e9d9926f124392468c068f061d7, type: 3}
+    useCustomRevealSpeed: 0
+    revealLettersPerSecond: 0
+    interactionRequirement:
+      enabled: 0
+      allowedInteractionIds: []
+      requiredInteractionCount: 1
+  - text: Now buckle up 'cause I'm only gonna say this once.
+    speakerName: Sheriff
+    portrait: {fileID: -7307842283543146795, guid: 8e858e9d9926f124392468c068f061d7, type: 3}
+    useCustomRevealSpeed: 0
+    revealLettersPerSecond: 0
+    interactionRequirement:
+      enabled: 0
+      allowedInteractionIds: []
+      requiredInteractionCount: 1
+  - text: 'We''ve got scheduled trains coming in with lots of different info. You''ll
+      have to let ''em pass or send ''em back based on what we''re expecting. '
+    speakerName: Sheriff
+    portrait: {fileID: -7307842283543146795, guid: 8e858e9d9926f124392468c068f061d7, type: 3}
+    useCustomRevealSpeed: 0
+    revealLettersPerSecond: 0
+    interactionRequirement:
+      enabled: 0
+      allowedInteractionIds: []
+      requiredInteractionCount: 1
+  - text: I'll show you the ropes for today, but afterwards you're on your own!
+    speakerName: Sheriff
+    portrait: {fileID: -7307842283543146795, guid: 8e858e9d9926f124392468c068f061d7, type: 3}
+    useCustomRevealSpeed: 0
+    revealLettersPerSecond: 0
+    interactionRequirement:
+      enabled: 0
+      allowedInteractionIds: []
+      requiredInteractionCount: 1
+  - text: 'When a train comes in you need to check two things for each type of request:
+      the type of request and the user input'
+    speakerName: Sheriff
+    portrait: {fileID: -7307842283543146795, guid: 8e858e9d9926f124392468c068f061d7, type: 3}
+    useCustomRevealSpeed: 0
+    revealLettersPerSecond: 0
+    interactionRequirement:
+      enabled: 0
+      allowedInteractionIds: []
+      requiredInteractionCount: 1
+  - text: Here comes the train now, pay attention.
+    speakerName: Sheriff
+    portrait: {fileID: -7307842283543146795, guid: 8e858e9d9926f124392468c068f061d7, type: 3}
+    useCustomRevealSpeed: 0
+    revealLettersPerSecond: 0
+    interactionRequirement:
+      enabled: 0
+      allowedInteractionIds: []
+      requiredInteractionCount: 1

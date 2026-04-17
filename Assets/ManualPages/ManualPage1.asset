@@ -1,0 +1,53 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c1bff6658b6d4fe18488eccfca7256bb, type: 3}
+  m_Name: ManualPage1
+  m_EditorClassIdentifier: 
+  pageIndex: 0
+  pageTitle: Welcome To RouterCo
+  leftPageBody: 'POST Requests:
+
+    A POST request is used to send data from the
+    client to the server, typically in the request body (often JSON or form data),
+    to create or modify resources. To determine if a POST request is safe, the user
+    should focus on the body fields and any user-supplied values, looking for unusual
+    patterns such as embedded commands (;, &&), script tags, or unexpected data types.
+    Safe POST requests usually contain clean, well-formed data that matches the expected
+    input (e.g., a normal IP address or username), while unsafe ones often include
+    extra characters or commands that suggest injection attempts or misuse of the
+    server.
+
+
+    Safe Example:
+
+    POST /api/register HTTP/1.1\nHost: example.com\nContent-Type:
+    application/json\n{\n  \"username\": \"mjohnson\",\n  \"email\": \"mjohnson@example.com\",\n 
+    \"password\": \"S3cur3P@ssw0rd!\"\n}'
+  rightPageBody: 'GET requests
+
+    A GET request is used to retrieve data from the
+    server, with parameters typically included in the URL query string. To evaluate
+    safety, the user should examine the query parameters, since these are often user-controlled,
+    and check for suspicious additions like SQL keywords (UNION, SELECT), encoded
+    characters (%60, %3B), or attempts to manipulate file paths (../). Safe GET requests
+    generally have simple, expected parameter values, while unsafe ones include injected
+    code or malformed inputs designed to exploit how the server processes those parameters.
+
+
+    Safe
+    Example:
+
+    GET /api/products?category=books&sort=rating&order=desc&page=1
+    HTTP/1.1\nHost: example.com\nAccept: application/json\nAuthorization: Bearer
+    eyJhbGciOiJIUzI1NiJ9.exampletoken123'
+  difficultyTag: 
+  unlockThreshold: 0
