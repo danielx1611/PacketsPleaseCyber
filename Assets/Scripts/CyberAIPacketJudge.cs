@@ -48,7 +48,6 @@ public class CyberAIPacketJudge : MonoBehaviour
     [SerializeField] private string modelName = "llama-3.1-8b-instant";
 
     [Header("Model Context (Do Not Change In Functions)")]
-    [SerializeField] private TextAsset modelContextAsset;
     [SerializeField, TextArea(8, 18)] private string modelContext =
         "You are a cybersecurity packet inspector tutor. Keep answers concise and educational.";
 
@@ -200,11 +199,6 @@ public class CyberAIPacketJudge : MonoBehaviour
 
     private string ResolveModelContext()
     {
-        if (modelContextAsset != null && !string.IsNullOrWhiteSpace(modelContextAsset.text))
-        {
-            return modelContextAsset.text;
-        }
-
         return modelContext;
     }
 }
