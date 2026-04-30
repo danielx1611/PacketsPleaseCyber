@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: Level1EndingSequence
   m_EditorClassIdentifier: 
   lines:
-  - text: Not too bad for your first day, let's see if you can do just as good tomorrow!
+  - text: Well done!
     speakerName: Sheriff
     portrait: {fileID: -7307842283543146795, guid: 8e858e9d9926f124392468c068f061d7, type: 3}
     useCustomRevealSpeed: 0

