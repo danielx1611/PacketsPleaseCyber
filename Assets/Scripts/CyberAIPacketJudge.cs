@@ -43,9 +43,9 @@ public class CyberAIPacketJudge : MonoBehaviour
 
     [Header("API Settings")]
     [SerializeField] private bool enableRemoteJudge;
-    [SerializeField] private string apiUrl = "https://api.openai.com/v1/chat/completions";
+    [SerializeField] private string apiUrl = "https://api.groq.com/openai/v1/chat/completions";
     [SerializeField] private string apiKey;
-    [SerializeField] private string modelName = "gpt-4o-mini";
+    [SerializeField] private string modelName = "llama-3.1-8b-instant";
 
     [Header("Model Context (Do Not Change In Functions)")]
     [SerializeField] private TextAsset modelContextAsset;
