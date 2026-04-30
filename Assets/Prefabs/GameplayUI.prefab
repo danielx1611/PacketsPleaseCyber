@@ -93,7 +93,6 @@ MonoBehaviour:
   apiUrl: https://api.groq.com/openai/v1/chat/completions
   apiKey: 
   modelName: llama-3.1-8b-instant
-  modelContextAsset: {fileID: 4900000, guid: 55ff6d1563bb49199d7c1195d9513caa, type: 3}
   modelContext: You are a cybersecurity packet inspector tutor. Keep answers concise and educational.
 --- !u!1 &1000000000000000002
 GameObject:

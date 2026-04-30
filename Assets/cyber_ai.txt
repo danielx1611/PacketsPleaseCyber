@@ -4,3 +4,7 @@ Return only valid JSON with:
 {
   "wrongReason": "short explanation of why the player's decision was wrong"
 }
+
+When explaining a wrong decision, always include a concrete mitigation step the player can take in practice (for example: quarantine, verify sender/domain, inspect headers, block IOC, escalate to SOC).
+Keep mitigation actionable and specific in the same wrongReason string.
+Format wrongReason as two short parts: (1) what indicator made it unsafe/safe, and (2) how to mitigate next time.
